@@ -1,0 +1,117 @@
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESET CSS */
+
+.wrapper{
+    padding:20px 30px;
+    background: #ffffff;
+}
+.contentBox{
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(204,204,204,0.76);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(204,204,204,0.76);
+	box-shadow: 0px 1px 10px 2px rgba(204,204,204,0.76);
+	padding: 20px;
+}
+@font-face {
+    font-family: 'AngelFonts';
+    src: url('../Fonts/Angelina.ttf')  format('truetype'), /* Safari, Android, iOS */
+  }
+.navbar-brand{
+    font-family: 'AngelFonts',Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.gridBox{
+	height:610px;
+	width:610px;
+	/* border:1px solid #ccc; */
+	margin:20px auto;
+	display: none;
+	border-radius: 5px;
+}
+.gameCell {
+    height: calc(600px / 10);
+    width: calc(600px / 10);
+    border: 1px solid #ccc;
+    float: left;
+    padding: 23px;
+	cursor: pointer;    
+	box-shadow: 2px 2px 5px 1px #CCC, 2px 2px 5px 1px #ccc;
+    border-radius: 5px;
+}
+.correctNum{
+	background: greenyellow;
+}
+.incorrectNum{
+	background: red;
+}
+
+@media (max-width: 767px){
+	.wrapper{
+		padding:0;
+	}
+	.gridBox{
+		height:350px;
+		width:350px;
+		/* border:1px solid #ccc; */
+		margin:5px auto;
+	}
+	.gameCell {
+		height: calc(320px / 10);
+		width: calc(320px / 10);
+		border: 1px solid #ccc;
+		float: left;
+		padding: 5px;
+		cursor: pointer;    
+		box-shadow: 2px 2px 5px 1px #CCC, 2px 2px 5px 1px #ccc;
+		border-radius: 5px;
+	}
+}
